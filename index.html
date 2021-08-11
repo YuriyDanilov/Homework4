@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //сумма елементов массива
+
+        let arr = [];
+        while (true) {
+
+            //let numbers = prompt("enter numbers");
+
+            if (isNaN(numbers) ||         //если не число
+                numbers === "" ||         // или пустая строка
+                numbers === null) break;  // или "Отмена" , то прекратить ввод
+            arr.push(numbers);
+        }
+
+        function sumElements(arr) {
+            let sum = 0;
+            for (let i = 0; i < arr.length; i++) {
+                sum += arr[i];
+            }
+            return ("sum = " + sum);
+        }
+
+        //alert(sumElements(arr));
+
+
+
+
+        //  индекс в массиве
+
+
+        let arr = [];
+        while (true) {
+
+            //let numbers = prompt("enter numbers");
+
+            if (isNaN(numbers) ||         // если не число
+                numbers === "" ||         // или пустая строка
+                numbers === null) break;  // или "Отмена" , то прекратить ввод
+            arr.push(numbers);
+        }
+
+        //let value = prompt("enter value");
+
+        function indexElement(arr, value) {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] === value)
+                    return ("index = " + i);
+            }
+            return -1;
+        }
+        //alert(indexElement(arr, value));
+
+
+
+
+        //  123 + abc = 123abc
+
+
+        let arr1 = [],
+            arr2 = [];
+        while (true) {
+
+            //let valueArr1 = prompt("enter element 1-st array");
+
+            if (valueArr1 === null ||
+                valueArr1 === "") break;
+            arr1.push(valueArr1);
+        }
+        while (true) {
+
+            //let valueArr2 = prompt("enter element 2-nd array");
+
+            if (valueArr2 === null ||
+                valueArr2 === "") break;
+            arr2.push(valueArr2);
+        }
+
+        function newArr(arr1, arr2) {
+            let arr3 = arr1;
+            for (let i = 0; i < arr2.length; i++) {
+                arr3.push(arr2[i]);
+            }
+            return arr3;
+        }
+
+        //alert(newArr(arr1, arr2));
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
